@@ -1,0 +1,28 @@
+{
+  "name": "cdkit.ui.automation",
+  "version": "1.0.0",
+  "description": "Appium bootstrap to run UI Automation tests.",
+  "main": "run.js",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:timoa/cdkit.ui.automation.git"
+  },
+  "keywords": [
+    "appium",
+    "titanium",
+    "mobile"
+  ],
+  "author": "Damien Laureaux",
+  "license": "MIT",
+  "homepage": "https://github.com/timoa/cdkit.ui.automation#readme",
+  "dependencies": {
+    "appium": "^1.14.1",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "commander": "^3.0.0",
+    "mocha": "^6.2.0",
+    "q": "^2.0.2",
+    "underscore": "^1.8.3",
+    "wd": "^1.11.3"
+  }
+}
