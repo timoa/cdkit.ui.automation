@@ -18,10 +18,12 @@
     "mobile"
   ],
   "author": "Wilson Luu",
-  "contributors": [{
-    "name": "Damien Laureaux",
-    "url": "https://timoa.com"
-  }],
+  "contributors": [
+    {
+      "name": "Damien Laureaux",
+      "url": "https://timoa.com"
+    }
+  ],
   "license": "ISC",
   "homepage": "https://github.com/timoa/cdkit.ui.automation#readme",
   "dependencies": {
@@ -34,16 +36,23 @@
     "wd": "^1.11.4",
     "winston": "^3.2.1"
   },
+  "engines": {
+    "node": ">=10.0"
+  },
+  "os": [
+    "linux",
+    "win32",
+    "darwin"
+  ],
   "devDependencies": {
-    "acorn": "^6.0.4",
-    "acorn-jsx": "^5.0.0",
-    "eslint": "^6.1.0",
-    "eslint-config-airbnb": "^18.0.1",
+    "acorn": "^6.3.0",
+    "acorn-jsx": "^5.0.2",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.1",
     "eslint-config-prettier": "4.2.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-react": "^7.14.3",
     "espree": "^4.1.0",
     "nyc": "^14.1.1"
   },
