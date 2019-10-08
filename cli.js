@@ -30,14 +30,13 @@ global.driver = setup.appiumServer(configServer);
 global.webdriver = setup.getWd();
 
 let ranAlready = '';
-let appiumProc = null; // will be assigned a ChildProcess object
 
 // change the comma-delimited value into something useful
 const suiteData = Help.transform(Program.app, Program.suites, Program.platform);
 
 let p = new Promise(resolve => {
 	// start the local appium server
-	appiumProc = Help.runAppium(configServer, resolve);
+	Help.runAppium(configServer, resolve);
 })
 .then(() => {
 	return new Promise(resolve => {
@@ -74,10 +73,10 @@ Help.createTests(Program.app, suiteData).forEach(test => {
 			// grrrrr, can't run the same test suite twice in mocha; need to apply this workaround
 			// https://github.com/mochajs/mocha/issues/995
 			if (ranAlready === test.suite) {
-				for (let file in require.cache) {
+				Object.keys(require.cache).forEach((file) => {
 					// seems safe: http://stackoverflow.com/a/11477602
 					delete require.cache[file];
-				}
+				});
 			}
 			ranAlready = test.suite;
 
@@ -88,6 +87,7 @@ Help.createTests(Program.app, suiteData).forEach(test => {
 			})
 			.addFile(test.suite)
 			.run(failures => {
+				logger.error(failures);
 				resolve();
 			});
 		});
