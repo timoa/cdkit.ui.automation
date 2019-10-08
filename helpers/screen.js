@@ -1,5 +1,7 @@
 const fs = require('fs');
 
+const logger = require('../lib/logger');
+
 exports.getScreenSize = (driver, platform, callback) => {
   if (platform === 'android') {
     return driver
@@ -28,7 +30,9 @@ exports.takeScreenshot = (driver, path, screen, sleep = 2000) => {
       .then(() => {
         try {
           fs.unlinkSync(filename);
-        } catch (ign) {}
+        } catch (error) {
+          logger.error(error);
+        }
         return fs.existsSync(filename).should.not.be.ok;
       })
       .saveScreenshot(filename)
