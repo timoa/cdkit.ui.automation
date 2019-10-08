@@ -13,7 +13,7 @@ const configServer = require('./config/server.json');
 	argument value passed to the script.
 */
 Program
-  .option('--app <bundleId>', 'app bundleId (needs to be present in the /tests/<bundleId> folder')
+  .option('--app <bundleId>', 'app bundleId (needs to be present in the /ui-tests/<bundleId> folder)')
 	.option('--suites <suites>', 'comma-delimited string of valid test suites; otherwise, run all tests')
 	.option('--use-sdk <ti_sdk>', 'build all test apps with the specified Titanium SDK')
 	.option('--platform <platform>', 'run all tests with the specified platform')
