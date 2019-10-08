@@ -31,7 +31,9 @@ exports.takeScreenshot = (driver, path, screen, sleep = 2000) => {
         try {
           fs.unlinkSync(filename);
         } catch (error) {
-          logger.error(error);
+          if(error) {
+            logger.error(error);
+          }
         }
         return fs.existsSync(filename).should.not.be.ok;
       })
