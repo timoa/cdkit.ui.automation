@@ -5,8 +5,10 @@
   "main": "cli.js",
   "scripts": {
     "pretest": "./node_modules/.bin/eslint .",
-    "test": "./node_modules/.bin/mocha --reporter spec",
-    "test:coverage": "./node_modules/.bin/nyc npm test"
+    "test": "snyk test && ./node_modules/.bin/mocha --reporter spec",
+    "test:coverage": "./node_modules/.bin/nyc npm test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -27,12 +29,13 @@
   "license": "ISC",
   "homepage": "https://github.com/timoa/cdkit.ui.automation#readme",
   "dependencies": {
-    "appium": "^1.15.0",
+    "appium": "^1.17.1",
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
     "commander": "^3.0.2",
-    "mocha": "^6.2.1",
+    "mocha": "^6.2.3",
     "q": "^2.0.2",
+    "snyk": "^1.361.3",
     "wd": "^1.11.4",
     "winston": "^3.2.1"
   },
@@ -78,5 +81,6 @@
       "ui-tests/**/*.js"
     ],
     "all": true
-  }
+  },
+  "snyk": true
 }
