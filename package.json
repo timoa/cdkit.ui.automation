@@ -5,7 +5,7 @@
   "main": "cli.js",
   "scripts": {
     "pretest": "./node_modules/.bin/eslint .",
-    "test": "snyk test && ./node_modules/.bin/mocha --reporter spec",
+    "test": "./node_modules/.bin/mocha --reporter spec",
     "test:coverage": "./node_modules/.bin/nyc npm test",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
