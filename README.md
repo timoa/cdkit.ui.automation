@@ -1,6 +1,6 @@
 # [CDKit][cdkit-github]: UI Tests Automation
 
-[![Build Status][travis-badge]][travis-url]
+[![Build Status][github-badge]][github-url]
 [![Quality Gate Status][sonarcloud-status-badge]][sonarcloud-url]
 [![Security Rating][sonarcloud-security-badge]][sonarcloud-url]
 [![Maintainability Rating][sonarcloud-maintainability-badge]][sonarcloud-url]
@@ -174,8 +174,8 @@ Couple notes about those examples vs these test suites:
 
 [cdkit-github]: https://github.com/timoa/cdkit
 [sonarcloud]: https://sonarcloud.io/about
-[travis-badge]: https://travis-ci.com/timoa/cdkit.ui.automation.svg?branch=master
-[travis-url]: https://travis-ci.com/timoa/cdkit.ui.automation
+[github-badge]: https://github.com/timoa/cdkit.ui.automation/workflows/Build/badge.svg
+[github-url]: https://github.com/timoa/cdkit.ui.automation/actions?query=workflow%3ABuild
 [sonarcloud-url]: https://sonarcloud.io/dashboard?id=timoa_cdkit.ui.automation
 [sonarcloud-status-badge]: https://sonarcloud.io/api/project_badges/measure?project=timoa_cdkit.ui.automation&metric=alert_status
 [sonarcloud-security-badge]: https://sonarcloud.io/api/project_badges/measure?project=timoa_cdkit.ui.automation&metric=security_rating
