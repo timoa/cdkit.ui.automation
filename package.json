@@ -6,7 +6,9 @@
   "scripts": {
     "pretest": "./node_modules/.bin/eslint .",
     "test": "./node_modules/.bin/mocha --reporter spec",
-    "test:coverage": "./node_modules/.bin/nyc npm test"
+    "test:coverage": "./node_modules/.bin/nyc npm test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -34,7 +36,8 @@
     "mocha": "^7.1.1",
     "q": "^2.0.2",
     "wd": "^1.11.4",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "snyk": "^1.362.0"
   },
   "engines": {
     "node": ">=10.0"
@@ -78,5 +81,6 @@
       "ui-tests/**/*.js"
     ],
     "all": true
-  }
+  },
+  "snyk": true
 }
