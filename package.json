@@ -29,7 +29,7 @@
   "license": "ISC",
   "homepage": "https://github.com/timoa/cdkit.ui.automation#readme",
   "dependencies": {
-    "appium": "^1.15.0",
+    "appium": "^1.18.0",
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
     "commander": "^3.0.2",
