@@ -4,7 +4,7 @@ const Q = require('q');
 
 exports.swipe = function(opts) {
   const action = new wd.TouchAction();
-  
+
   action
     .press({ x: opts.startX, y: opts.startY })
     .wait(opts.duration)
