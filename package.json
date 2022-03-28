@@ -3,6 +3,7 @@
   "version": "0.8.1",
   "description": "Appium infrastructure to run Appium tests on iOS simulators and Genymotion emulators.",
   "main": "cli.js",
+  "private": true,
   "scripts": {
     "pretest": "./node_modules/.bin/eslint .",
     "test": "./node_modules/.bin/mocha --reporter spec",
