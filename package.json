@@ -49,7 +49,7 @@
     "darwin"
   ],
   "devDependencies": {
-    "acorn": "6.4.1",
+    "acorn": "6.4.2",
     "acorn-jsx": "5.2.0",
     "eslint": "5.16.0",
     "eslint-config-airbnb": "17.1.1",
