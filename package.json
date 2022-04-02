@@ -3,6 +3,7 @@
   "version": "0.8.1",
   "description": "Appium infrastructure to run Appium tests on iOS simulators and Genymotion emulators.",
   "main": "cli.js",
+  "private": true,
   "scripts": {
     "pretest": "./node_modules/.bin/eslint .",
     "test": "./node_modules/.bin/mocha --reporter spec",
@@ -29,15 +30,15 @@
   "license": "ISC",
   "homepage": "https://github.com/timoa/cdkit.ui.automation#readme",
   "dependencies": {
-    "appium": "^1.20.0",
-    "chai": "^3.5.0",
-    "chai-as-promised": "^6.0.0",
-    "commander": "^3.0.2",
-    "mocha": "^8.2.0",
-    "q": "^2.0.2",
-    "snyk": "^1.465.0",
-    "wd": "^1.13.0",
-    "winston": "^3.3.3"
+    "appium": "1.22.2",
+    "chai": "3.5.0",
+    "chai-as-promised": "6.0.0",
+    "commander": "3.0.2",
+    "mocha": "9.2.2",
+    "q": "2.0.3",
+    "snyk": "1.877.0",
+    "wd": "1.14.0",
+    "winston": "3.6.0"
   },
   "engines": {
     "node": ">=10.0"
@@ -48,16 +49,16 @@
     "darwin"
   ],
   "devDependencies": {
-    "acorn": "^6.4.1",
-    "acorn-jsx": "^5.2.0",
-    "eslint": "^5.9.0",
-    "eslint-config-airbnb": "^17.1.1",
-    "eslint-config-prettier": "4.2.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.20.6",
-    "espree": "^4.1.0",
-    "nyc": "^14.1.1"
+    "acorn": "6.4.2",
+    "acorn-jsx": "5.3.2",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb": "17.1.1",
+    "eslint-config-prettier": "4.3.0",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-react": "7.29.4",
+    "espree": "4.1.0",
+    "nyc": "14.1.1"
   },
   "nyc": {
     "check-coverage": true,
