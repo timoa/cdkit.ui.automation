@@ -30,7 +30,7 @@
   "license": "ISC",
   "homepage": "https://github.com/timoa/cdkit.ui.automation#readme",
   "dependencies": {
-    "appium": "1.22.2",
+    "appium": "1.22.3",
     "chai": "3.5.0",
     "chai-as-promised": "6.0.0",
     "commander": "3.0.2",
