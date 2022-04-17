@@ -1,0 +1,23 @@
+{
+    "check-coverage": true,
+    "lines": 0,
+    "statements": 0,
+    "functions": 0,
+    "branches": 0,
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "include": [
+      "config/*.js",
+      "helpers/*.js",
+      "lib/*.js",
+      "cli.js"
+    ],
+    "exclude": [
+      "test/*.spec.js",
+      "coverage/**",
+      "ui-tests/**/*.js"
+    ],
+    "all": true
+  }

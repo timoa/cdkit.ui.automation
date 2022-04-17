@@ -4,11 +4,12 @@
   "description": "Appium infrastructure to run Appium tests on iOS simulators and Genymotion emulators.",
   "main": "cli.js",
   "private": true,
+  "snyk": true,
   "scripts": {
     "pretest": "./node_modules/.bin/eslint .",
     "test": "./node_modules/.bin/mocha --reporter spec",
     "test:coverage": "./node_modules/.bin/nyc npm test",
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "snyk-protect",
     "prepare": "npm run snyk-protect"
   },
   "repository": {
@@ -30,18 +31,19 @@
   "license": "ISC",
   "homepage": "https://github.com/timoa/cdkit.ui.automation#readme",
   "dependencies": {
+    "@snyk/protect": "1.900.0",
     "appium": "1.22.3",
     "chai": "3.5.0",
     "chai-as-promised": "6.0.0",
     "commander": "3.0.2",
     "mocha": "9.2.2",
     "q": "2.0.3",
-    "snyk": "1.893.0",
     "wd": "1.14.0",
     "winston": "3.6.0"
   },
   "engines": {
-    "node": ">=10.0"
+    "node": ">=16.0",
+    "npm": ">=8.6.0"
   },
   "os": [
     "linux",
@@ -59,29 +61,5 @@
     "eslint-plugin-react": "7.29.4",
     "espree": "9.3.1",
     "nyc": "15.1.0"
-  },
-  "nyc": {
-    "check-coverage": true,
-    "lines": 0,
-    "statements": 0,
-    "functions": 0,
-    "branches": 0,
-    "reporter": [
-      "lcov",
-      "text-summary"
-    ],
-    "include": [
-      "config/*.js",
-      "helpers/*.js",
-      "lib/*.js",
-      "cli.js"
-    ],
-    "exclude": [
-      "test/*.spec.js",
-      "coverage/**",
-      "ui-tests/**/*.js"
-    ],
-    "all": true
-  },
-  "snyk": true
+  }
 }
