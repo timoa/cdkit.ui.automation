@@ -59,7 +59,7 @@
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jsx-a11y": "6.6.1",
     "eslint-plugin-react": "7.31.10",
-    "espree": "9.4.0",
+    "espree": "9.4.1",
     "nyc": "15.1.0"
   }
 }
