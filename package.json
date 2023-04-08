@@ -4,13 +4,10 @@
   "description": "Appium infrastructure to run Appium tests on iOS simulators and Genymotion emulators.",
   "main": "cli.js",
   "private": true,
-  "snyk": true,
   "scripts": {
     "pretest": "./node_modules/.bin/eslint .",
     "test": "./node_modules/.bin/mocha --reporter spec",
-    "test:coverage": "./node_modules/.bin/nyc npm test",
-    "snyk-protect": "snyk-protect",
-    "prepare": "npm run snyk-protect"
+    "test:coverage": "./node_modules/.bin/nyc npm test"
   },
   "repository": {
     "type": "git",
@@ -31,7 +28,6 @@
   "license": "ISC",
   "homepage": "https://github.com/timoa/cdkit.ui.automation#readme",
   "dependencies": {
-    "@snyk/protect": "1.1109.0",
     "appium": "1.22.3",
     "chai": "3.5.0",
     "chai-as-promised": "6.0.0",
@@ -59,7 +55,7 @@
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-jsx-a11y": "6.7.1",
     "eslint-plugin-react": "7.32.2",
-    "espree": "9.5.0",
+    "espree": "9.4.1",
     "nyc": "15.1.0"
   }
 }
