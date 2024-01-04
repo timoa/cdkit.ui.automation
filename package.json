@@ -32,7 +32,7 @@
   "homepage": "https://github.com/timoa/cdkit.ui.automation#readme",
   "dependencies": {
     "@snyk/protect": "1.900.0",
-    "appium": "1.22.3",
+    "appium": "2.4.0",
     "chai": "3.5.0",
     "chai-as-promised": "6.0.0",
     "commander": "3.0.2",
